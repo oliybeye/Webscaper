@@ -1,7 +1,9 @@
 import requests
 from bs4 import BeautifulSoup
+import sys
 
-url = 'https://seattle.craigslist.org/d/electronics/search/ela'
+# url = 'https://seattle.craigslist.org/d/electronics/search/ela'
+url = sys.argv[1]
 page = requests.get(url)
 
 class Merchandise:
